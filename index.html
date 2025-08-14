@@ -87,13 +87,13 @@
       display: flex; flex-direction: column; gap: 10px; transition: filter 0.2s;
     }
     .tweet-card.filtered {
-      /* position: relative; filter: brightness(0.6) grayscale(0.2); */
+      /* blur/overlay removed */
     }
     .tweet-card.filtered::after {
-      /* removed overlay */
+      /* overlay removed */
     }
-    /* .tweet-card.filtered:hover { filter: brightness(0.6) grayscale(0.2); } */
-    /* .tweet-card.filtered:hover::after { background: rgba(0,0,0,0.65); } */
+    /* blur/overlay removed */
+    /* overlay removed */
 
     .tweet-header { display: flex; align-items: center; gap: 8px; font-size: 15px; }
     .tweet-header .avatar { width: 40px; height: 40px; border-radius: 50%; margin-right: 8px; }
@@ -221,7 +221,7 @@
       <div class="feed-list" id="newsFeed">
         <!-- ======= FEED (24 cards) ======= -->
         <!-- t1 (blur) -->
-        <div class="tweet-card" data-tweet-id="t1" data-text="BREAK FREE from ZYN: Reddit Bros Help Thousands Kick the Nicotine Habit for Good!!!" data-type="news" data-emotional="false">
+        <div class="tweet-card filtered" data-tweet-id="t1" data-text="BREAK FREE from ZYN: Reddit Bros Help Thousands Kick the Nicotine Habit for Good!!!" data-type="news" data-emotional="false">
           <div class="tweet-header">
             <img class="avatar" src="https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png" alt="avatar" />
             <span class="tweet-username">The New York Times <span class="verified">✔️</span></span>
@@ -238,7 +238,7 @@
           </div>
         </div>
         <!-- t2 (blur) -->
-        <div class="tweet-card" data-tweet-id="t2" data-text="This HEART STOPPING Rescue that Plucked a Man from Death you have to watch." data-type="news" data-emotional="false">
+        <div class="tweet-card filtered" data-tweet-id="t2" data-text="This HEART STOPPING Rescue that Plucked a Man from Death you have to watch." data-type="news" data-emotional="false">
           <div class="tweet-header">
             <img class="avatar" src="https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png" alt="avatar" />
             <span class="tweet-username">The Associated Press <span class="verified">✔️</span></span>
@@ -255,7 +255,7 @@
           </div>
         </div>
         <!-- t3 (blur) -->
-        <div class="tweet-card" data-tweet-id="t3" data-text="Central Park REBORN, Bringing New Life and Healing History with Incredible New Pool" data-type="news" data-emotional="false">
+        <div class="tweet-card filtered" data-tweet-id="t3" data-text="Central Park REBORN, Bringing New Life and Healing History with Incredible New Pool" data-type="news" data-emotional="false">
           <div class="tweet-header">
             <img class="avatar" src="https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png" alt="avatar" />
             <span class="tweet-username">TIME <span class="verified">✔️</span></span>
@@ -272,7 +272,7 @@
           </div>
         </div>
         <!-- t4 (blur) -->
-        <div class="tweet-card" data-tweet-id="t4" data-text="Klamath River Roars Back to Life in a Once-in-a-Lifetime RETURN TO GLORY... after 100 YEARS!" data-type="news" data-emotional="false">
+        <div class="tweet-card filtered" data-tweet-id="t4" data-text="Klamath River Roars Back to Life in a Once-in-a-Lifetime RETURN TO GLORY... after 100 YEARS!" data-type="news" data-emotional="false">
           <div class="tweet-header">
             <img class="avatar" src="https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png" alt="avatar" />
             <span class="tweet-username">Natural News <span class="verified">✔️</span></span>
@@ -289,7 +289,7 @@
           </div>
         </div>
         <!-- t5 (blur) -->
-        <div class="tweet-card" data-tweet-id="t5" data-text="DEFY TIME: Turning Back the Clock and Feeling Stronger Than EVER. Pumping Iron is Their Secret!!" data-type="news" data-emotional="false">
+        <div class="tweet-card filtered" data-tweet-id="t5" data-text="DEFY TIME: Turning Back the Clock and Feeling Stronger Than EVER. Pumping Iron is Their Secret!!" data-type="news" data-emotional="false">
           <div class="tweet-header">
             <img class="avatar" src="https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png" alt="avatar" />
             <span class="tweet-username">Ask Quora <span class="verified">✔️</span></span>
@@ -380,8 +380,8 @@
         <div class="tweet-card" data-tweet-id="t10" data-text="Shell Recyclers In Connecticut Are Helping Oysters Find Homes" data-type="news" data-emotional="false">
           <div class="tweet-header">
             <img class="avatar" src="https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png" alt="avatar" />
-            <span class="tweet-username">Natural News <span class="verified">✔️</span></span>
-            <span class="tweet-handle">@natural news</span><span class="tweet-dot">·</span><span class="tweet-time">1m</span><span class="tweet-actions-right">⋯</span>
+            <span class="tweet-username">The National Enquirer <span class="verified"></span></span>
+            <span class="tweet-handle">@TheNationalEnq2</span><span class="tweet-dot">·</span><span class="tweet-time">1m</span><span class="tweet-actions-right">⋯</span>
           </div>
           <div class="tweet-body">Shell Recyclers In Connecticut Are Helping Oysters Find Homes</div>
           <div class="tweet-media"><img src="https://placehold.co/680x340/222/fff?text=Image" alt="media" /></div>
@@ -416,8 +416,8 @@
         <div class="tweet-card" data-tweet-id="t12" data-text="Spring Break For The Teens Of the Elite: Sun, Fun, And Networking" data-type="news" data-emotional="false">
           <div class="tweet-header">
             <img class="avatar" src="https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png" alt="avatar" />
-            <span class="tweet-username">The National Enquirer <span class="verified">✔️</span></span>
-            <span class="tweet-handle">@TheNationalEnq2</span><span class="tweet-dot">·</span><span class="tweet-time">1m</span><span class="tweet-actions-right">⋯</span>
+            <span class="tweet-username">Heat Magazine <span class="verified"></span></span>
+            <span class="tweet-handle">@_HeatMagazine_</span><span class="tweet-dot">·</span><span class="tweet-time">1m</span><span class="tweet-actions-right">⋯</span>
           </div>
           <div class="tweet-body">Spring Break For The Teens Of the Elite: Sun, Fun, And Networking</div>
           <div class="tweet-media"><img src="https://placehold.co/680x340/222/fff?text=Image" alt="media" /></div>
@@ -524,8 +524,8 @@
         <div class="tweet-card filtered" data-tweet-id="t18" data-text="Torrential RAIN TURNS HONG KONG into a WATERFALL City  Record Broken!" data-type="news" data-emotional="false">
           <div class="tweet-header">
             <img class="avatar" src="https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png" alt="avatar" />
-            <span class="tweet-username">Ask Quora <span class="verified">✔️</span></span>
-            <span class="tweet-handle">@AskQuoraCom</span><span class="tweet-dot">·</span><span class="tweet-time">1m</span><span class="tweet-actions-right">⋯</span>
+            <span class="tweet-username">Weekly World News <span class="verified"></span></span>
+            <span class="tweet-handle">@weeklyworldnews</span><span class="tweet-dot">·</span><span class="tweet-time">1m</span><span class="tweet-actions-right">⋯</span>
           </div>
           <div class="tweet-body">Torrential RAIN TURNS HONG KONG into a WATERFALL City  Record Broken!</div>
           <div class="tweet-media"><img src="https://placehold.co/680x340/222/fff?text=Image" alt="media" /></div>
@@ -632,7 +632,7 @@
         <div class="tweet-card" data-tweet-id="t24" data-text="Third Suspect Arrested After Man Was Kidnapped And Tortured For Bitcoin Wallet" data-type="news" data-emotional="false">
           <div class="tweet-header">
             <img class="avatar" src="https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png" alt="avatar" />
-            <span class="tweet-username">The National Enquirer <span class="verified">✔️</span></span>
+            <span class="tweet-username">The National Enquirer <span class="verified"></span></span>
             <span class="tweet-handle">@TheNationalEnq2</span><span class="tweet-dot">·</span><span class="tweet-time">1m</span><span class="tweet-actions-right">⋯</span>
           </div>
           <div class="tweet-body">Third Suspect Arrested After Man Was Kidnapped And Tortured For Bitcoin Wallet</div>
@@ -884,8 +884,7 @@
         window._activeViewsBtn = null;
       }
     }
-     /* ==== 从这里开始加新逻辑 ==== */
-// === 每次加载都随机（与 pid 无关） ===
+    // === 每次加载都随机（与 pid 无关） ===
 (function shuffleFeed() {
   const feed = document.getElementById('newsFeed');
   if (!feed) return;
@@ -904,8 +903,6 @@
   // 可选：打个点（你已有 logAction）
   try { logAction('shuffle_cards', { order: cards.map(c => c.dataset.tweetId) }); } catch(_) {}
 })();
-
-  /* ==== 新逻辑结束 ==== */
   // 根据图片自然宽高给容器打类（横/竖/方）
 function setMediaRatioByImage(img) {
   const media = img.closest('.tweet-media');
@@ -953,10 +950,10 @@ function setMediaRatioByImage(img) {
     tryNext();
   }
 
-// === 批量给头像换成来源 logo（独立于 headline 配图） ===
-(function applySourceAvatars() {
-  // 头像单独目录（你说的那个）
-  const BASE = 'assets/img/avatars/';
+  // === 批量给头像换成来源 logo（独立于 headline 配图） ===
+  (function applySourceAvatars() {
+    // 头像单独目录（你说的那个）
+    const BASE = 'assets/img/avatars/';
 
   // 归一化：去@、去空格、小写
   const norm = s => (s || '').toLowerCase().replace(/^@/, '').replace(/\s+/g, '');
@@ -976,7 +973,10 @@ function setMediaRatioByImage(img) {
     thenationalenq2: 'TheNationalEnq2',
     thenewspunchh: 'thenewspunchh',
     time: 'TIME',
-    washingtonpost: 'washingtonpost'
+    washingtonpost: 'washingtonpost',
+
+    heatmagazine: '_HeatMagazine_',   // 对应 _HeatMagazine_.jpeg
+    weeklyworldnews: 'weeklyworldnews',// 对应 weeklyworldnews.jpg
   };
 
   function setWithFallback(imgEl, baseName) {
